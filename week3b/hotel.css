@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+p,
+li {
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+
+.subhead {
+    font-size: 80%;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+h1,
+h2 {
+    font-family: serif;
+    border-bottom: :1px solid #002985;
+
+
+}
+
+h1 {
+    margin-bottom: .2em;
+}
+
+#infobox {
+    border: ;
+    border-spacing: ;
+    float: right;
+    clear: right;
+
+
+}
+
+#infobox img {}
+
+#infobox {}

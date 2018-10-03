@@ -14,6 +14,7 @@
      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
      line-height: 0;
      position: fixed;
+     /*     set the margin */
      right: 30px;
      top: 0;
  }
@@ -23,10 +24,13 @@
      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
      line-height: 10px;
      position: fixed;
+     /*     set the position and strech the line*/
      right: 30px;
      top: 190px;
      letter-spacing: 20px;
  }
+
+ /*float everything to the left*/
 
  div.lists {
      position: fixed;
@@ -35,6 +39,8 @@
      font-size: 36px;
      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
+
+ /*float inside the div.list*/
 
  div.exerciselist {
      padding-left: 35px;

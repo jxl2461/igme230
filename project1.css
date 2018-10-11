@@ -1,5 +1,6 @@
  body {
      margin: 0;
+     max-width: 1080px;
      height: 100%;
      width: 100%;
 
@@ -10,7 +11,7 @@
 
 
  h1 {
-     font-size: 140pt;
+     font-size: 10vw;
      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
      line-height: 0;
      position: fixed;
@@ -20,9 +21,9 @@
  }
 
  h2 {
-     font-size: 60px;
+     font-size: 3vw;
      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-     line-height: 10px;
+     line-height: 1px;
      position: fixed;
      /*     set the position and strech the line*/
      right: 30px;
@@ -35,8 +36,8 @@
  div.lists {
      position: fixed;
      top: 260px;
-     right: 50px;
-     font-size: 36px;
+     right: 30px;
+     font-size: 2vw;
      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
 

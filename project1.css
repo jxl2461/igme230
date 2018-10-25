@@ -48,6 +48,11 @@
      float: right;
  }
 
+ div.exerciselist2 {
+     padding-left: 35px;
+     float: right;
+ }
+
  div.projectlist {
      float: right;
  }

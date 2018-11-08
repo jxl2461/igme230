@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset=UTF-8>
+    <title>Jquery1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        #navpannel {
+            background: pink;
+            width: 200px;
+            height: 200px;
+        }
+/*
+        note from class
+        #panel1,
+        #panel2,
+        #panel3{
+            display:;
+            align-items: ;
+            justify-content: ;
+            height:;
+            width:;
+            border:;
+            margin-bottom: ;
+
+        }
+        #panel2{
+            position: absolute;
+            display: none;
+
+        }
+*/
+
+    </style>
+
+    <!--
+test error
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #navpannel {
+            width: 200px;
+            height: 200px;
+            background-color: firebrick;
+        }
+    </style>
+-->
+</head>
+
+<body>
+
+</body>
+<button id="show">show</button> <button id="hide">hide</button>
+<div id="navpannel">
+    <ul>
+        <li>link1</li>
+        <li>link2</li>
+        <li>link3</li>
+    </ul>
+</div>
+
+<script>
+    $("#hide").click(function() {
+        $("#navpannel").hide(5000);
+    });
+    $("#show").click(function() {
+        $("#navpannel").show();
+    });
+
+//    test error
+    //    $("#hide").click(function() {
+    //        $("#navpanel").hide(1500);
+    //    });
+    //
+    //    $("#show").click(function() {
+    //        $("#navpanel").show();
+    //    });
+
+</script>
+
+</html>

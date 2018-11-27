@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Side Slide Animate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.slidereveal.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            margin-top: 100px;
+            height: 150px;
+            width: 150px;
+
+        }
+
+        #navpanel {
+            display: grid;
+            grid-template-columns: 200px 1.5rem;
+            min-height: 300px;
+            max-height: 90vh;
+            overflow: scroll;
+            border: 1px solid black;
+            margin-bottom: 2em;
+            background-color: white;
+            position: fixed;
+            left: -150px;
+            z-index: 2;
+        }
+
+        #navmenu {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            align-items: top;
+        }
+
+        #close {
+            display: none;
+            font-size: 2.5rem;
+            font-size: 60px;
+        }
+
+        #open {
+            font-size: 2.5rem;
+        }
+
+        #wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            /* main axis vertical; places menu below togglebar */
+            align-items: flex-end;
+            /* moves contents to end of cross-axis (horizontal) */
+        }
+
+        #togglebar {
+            height: 25px;
+            width: 125px;
+            border: 1px solid;
+            text-align: center;
+            background-color: white;
+            z-index: 3;
+        }
+
+        #menu {
+            height: 200px;
+            width: 125px;
+            position: absolute;
+            top: 25px;
+            background-color: white;
+            border: 1px solid black;
+            border-top: none;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navpanel">
+        <div id="navtoggle"><span id="open">+</span><span id="close">-</span></div>
+        <div id="navmenu">
+            <img src="image/1.jpg">
+        </div>
+    </div>
+
+
+    <div id="wrapper">
+        <nav>
+            <div id="togglebar">click me</div>
+            <div id="menu">
+                <img src="image/2.jpg">
+            </div>
+        </nav>
+    </div>
+
+
+    <script>
+        $("#close").click(function() {
+            $("#navpanel").animate({
+                left: '-150'
+            }, "slow");
+            $("#close").toggle();
+            $("#open").toggle();
+        });
+
+        $("#open").click(function() {
+            $("#navpanel").animate({
+                left: '0px'
+            }, "slow");
+            $("#close").toggle();
+            $("#open").toggle();
+        });
+
+        $("#togglebar").click(function() {
+            $("#menu").slideToggle("slow");
+        });
+    </script>
+
+</body>
+
+</html>

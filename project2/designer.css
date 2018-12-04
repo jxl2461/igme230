@@ -1,0 +1,35 @@
+body {
+    max-width: 2000px;
+    background: black;
+}
+
+div.photogallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 60vw;
+    height: 100%;
+
+
+}
+
+img {
+    display: block;
+    min-width: 300px;
+    max-height: 300px;
+    border: solid;
+    /*    border-width: 2px;*/
+    border-color: black;
+    border-radius: 5px;
+}
+
+div.left {
+    float: left;
+    text-align: center;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 40vw;
+}
+
+h1 {
+    margin-top: 50vh;
+}

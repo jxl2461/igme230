@@ -90,3 +90,22 @@ p2 {
     font-size: 20px;
 
 }
+
+@media (max-width: 620px) {
+
+    div.topleft {
+        float: left;
+        text-align: center;
+
+    }
+
+    div.logo {
+        float: left;
+        text-align: center;
+    }
+
+    div.container1 {
+        float: left;
+        text-align: center;
+    }
+}

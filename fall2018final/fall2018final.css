@@ -1,0 +1,118 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+#mygrid {
+    display: grid;
+    width: 90vw;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-rows: 75px 30px 1fr 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h h" "a n" "a s" "f f";
+}
+
+header {
+    background-color: lightpink;
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: lightpink;
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    /*    display: inline-flex;*/
+    background-color: lightcyan;
+    grid-area: a;
+}
+
+aside {
+    background-color: lightblue;
+    grid-area: s;
+}
+
+nav {
+    background-color: lavenderblush;
+    grid-area: n;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.top {
+    width: 6rem;
+    background-color: #ccc;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    margin: none;
+    padding: none;
+    list-style-type: none;
+    background-color: #ddd;
+    display: none;
+    z-index: 2;
+    position: absolute;
+
+}
+
+li {
+    padding-left: .25rem;
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 36rem) {
+    #mygrid {
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px 30px auto auto 30px;
+        grid-template-areas: "h" "n" "a" "s" "f";
+    }
+
+}

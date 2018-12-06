@@ -1,0 +1,127 @@
+/*********************************
+General Formatting (Do Not Change)
+*********************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #86af49;
+}
+
+nav,
+aside,
+article {
+    padding: .5rem;
+}
+
+nav,
+aside {
+    background-color: #b5e7a0;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+/*
+#wrapper{
+    grid-template-areas:
+            "a a a"
+            "b c c"
+            "b c c";
+}
+*/
+
+#wrapper {
+    width: 90vw;
+    /*Grid width is 90% of the viewport width*/
+    max-width: 1200px;
+    /* a max-width of 1200px*/
+    min-height: 100vh;
+    /* Grid min-height is 100% of the viewport height*/
+    display: grid;
+    grid-template-rows: 4rem 1fr 3rem;
+    grid-template-columns: 1fr 2fr 200px;
+    grid-template-areas: "a a a" "b c d" "f f f";
+    margin: auto;
+    /*center not required*/
+}
+
+header {
+    display: flex;
+    /*verticle and horizental center*/
+    grid-area: a;
+    justify-content: center;
+    /*verticle align*/
+    align-items: center;
+    /*horizental align*/
+}
+
+nav {
+    grid-area: b;
+}
+
+article {
+    grid-area: c;
+}
+
+aside {
+    grid-area: d;
+
+}
+
+footer {
+    display: flex;
+    /*verticle and horizental center*/
+    grid-area: f;
+    justify-content: center;
+    /*verticle align*/
+    align-items: center;
+    /*horizental align*/
+}
+
+.menuitem {
+    background: white;
+    margin: none;
+    border: 1px solid #ffffff;
+}
+
+.submenu {
+    list-style-type: none;
+    /* no bullets*/
+    margin: none;
+    padding: none;
+    display: none;
+}
+
+.submenu {
+    /*    padding-left: .25rem;*/
+    background: #ccc;
+}
+
+/*mobile mode*/
+
+@media screen and (max-width: 36rem) {
+    #wrapper {
+        width: 100vw;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "a""b" "c" "d" "f";
+    }
+}

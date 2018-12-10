@@ -1,10 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>resume</title>
     <link href="resume.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -16,20 +17,18 @@
 
     <div class="resume">
         <div class="name">
-            <h4>Jiayun Li</h4>
+            <h4><a href="image/resume%20JIayun%20final.pdf">Jiayun Li</a></h4>
             <p>Looking for an internship or co-op related to New Media design major in your company to obtain more major related experience.</p>
 
         </div>
 
         <div class="education">
             <h2>education</h2>
-            <div class="edu1">
+            <div class="edu">
                 <h3>The affiliated High School of Peking University; Capital Normal University High school, Beijing — High School</h3>
                 <p>Aug 2012 - Jun 2016</p>
 
-            </div>
 
-            <div class="edu2">
                 <h3>Rochester Institute of Technology, Rochester — New Media Design</h3>
                 <p>Aug 2016 - Jun 2020</p>
                 <p1>-Course work: NM Interactive Design and Algorithmic Problem Solving I(js.p5), New Media Design Elements II, New Media Design 3D, New Media Design Interactive I,New Media Design Digital Survey I & II
@@ -41,15 +40,18 @@
 
         <div class="skill">
             <h2>skill</h2>
-            <p2>Knowledge of Illustrator, Photoshop, Indesign, Premiere, Cinema 4d, html</p2>
+            <div class="edu">
+                <p2>Knowledge of Illustrator, Photoshop, Indesign, Premiere, Cinema 4d, html</p2>
 
-
+            </div>
 
         </div>
 
         <div class="language">
             <h2>language</h2>
-            <p2>Fluent in Chinese and English</p2>
+            <div class="edu">
+                <p2>Fluent in Chinese and English</p2>
+            </div>
 
 
 
@@ -57,6 +59,11 @@
 
 
     </div>
+    <script>
+        $("h2").click(function() {
+            $(this).next(".edu").slideToggle();
+        });
+    </script>
 
 
 </body>

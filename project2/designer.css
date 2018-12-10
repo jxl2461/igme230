@@ -1,6 +1,9 @@
 body {
     max-width: 2000px;
     background: black;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
 }
 
 div.photogallery {
@@ -23,6 +26,8 @@ img {
 }
 
 div.left {
+    display: flex;
+    justify-content: center;
     float: left;
     text-align: center;
     color: white;

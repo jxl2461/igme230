@@ -1,30 +1,4 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>portfolio page</title>
-    <link href="main.css" rel="stylesheet" type="text/css">
-
-</head>
-
-<body>
-
-    <div class="topleft">
-        <div class="photo">
-            <img class="profilePhoto" src="image/1.PNG">
-        </div>
-        <h1>Jiayun Li Selina </h1>
-
-    </div>
-
-
-
-
-
-    <div class="logo">
-
-        <svg width="304" height="305" viewBox="0 0 304 305" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="304" height="305" viewBox="0 0 304 305" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M124.5 152V223.4C124.5 236.5 118.5 249 107.8 256.6C95.9 265.1 78.8 267.3 60 237" stroke="url(#paint0_linear)" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round"/>
 <path d="M152 25V193.9C152 196.7 154.3 199 157.1 199H246" stroke="url(#paint1_linear)" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round"/>
 <path d="M20.5 152H159" stroke="#AA5CA4" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -51,29 +25,3 @@
 </linearGradient>
 </defs>
 </svg>
-
-    </div>
-
-
-
-    <div class="manu">
-        <p2><a href="resume.html">
-                    A learner.
-                </a>
-            <a href="designer.html">
-                    A designer.
-                </a>
-            <a href=" ">
-                    A explorer.
-                </a>
-            <a href=" ">
-                    A friend.
-                </a>
-
-        </p2>
-
-    </div>
-
-</body>
-
-</html>

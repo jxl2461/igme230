@@ -10,11 +10,11 @@ body {
 
 div.topleft {
 
-    display: flex;
+
     height: 20vh;
     margin: .3rem;
     margin-left: 3vw;
-    /*    justify-content: center;*/
+
 }
 
 div.photo {
@@ -106,25 +106,28 @@ path {
     to {
         stroke-dashoffset: 0;
     }
+}
 
-    @media (max-width: 620px) {
+@media screen and (max-width: 560px) {
 
-        div.topleft {
-            float: left;
-            text-align: center;
+    div.topleft {
+        display: flex;
 
-        }
+        justify-content: center;
 
-        div.logo {
-            float: left;
-            text-align: center;
-        }
+        align-items: center;
 
-        div.container1 {
-            float: left;
-            text-align: center;
-        }
     }
 
+    div.logo {
 
+        align-items: center;
+        width: 100vw;
+    }
+
+    div.container1 {
+
+        align-items: center;
+        width: 100vw;
+    }
 }
